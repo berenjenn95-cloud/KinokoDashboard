@@ -28,5 +28,24 @@ namespace KinokoBackend.API.Controllers
             await _repo.DeleteAsync(id);
             return NoContent();
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            Song? resp = await _repo.GetByIdAsync(id);
+
+            if (resp == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(resp);
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var songs = await _repo.GetAllAsync();
+            return Ok(songs);
+        }
     }
 }

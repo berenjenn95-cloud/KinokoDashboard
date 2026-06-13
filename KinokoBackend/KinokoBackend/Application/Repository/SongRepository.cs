@@ -1,5 +1,6 @@
 ﻿using KinokoBackend.Domain;
 using KinokoBackend.Infrastucture.DBContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace KinokoBackend.Application.Repository
 {
@@ -31,6 +32,10 @@ namespace KinokoBackend.Application.Repository
         public async Task<Song?> GetByIdAsync(int id)
         {
             return await _db.Songs.FindAsync(id);
+        }
+        public async Task<IEnumerable<Song>> GetAllAsync()
+        {
+            return await _db.Songs.ToListAsync();
         }
     }
 }

@@ -7,5 +7,6 @@ namespace KinokoBackend.Application.Repository
         Task AddAsync(Song song);
         Task DeleteAsync(int id);
         Task<Song?> GetByIdAsync(int id);
+        Task<IEnumerable<Song>> GetAllAsync();
     }
 }

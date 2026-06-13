@@ -12,7 +12,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISongRepository, SongRepository>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
-Console.WriteLine(builder.Configuration.GetConnectionString("Default"));
 var app = builder.Build();
 
 app.UseSwagger();

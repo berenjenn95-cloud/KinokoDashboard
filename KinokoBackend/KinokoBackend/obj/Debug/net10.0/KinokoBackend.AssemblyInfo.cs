@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KinokoBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a59cf1c12c6358611d6e153d27edb5c51627457")]
 [assembly: System.Reflection.AssemblyProductAttribute("KinokoBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KinokoBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
